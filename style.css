@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #364874;
+}
+
+.container {
+    width: 595px;
+    height: 695px;
+    background: #555E66;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.container .tries-container {
+    width: 545px;
+    height: 75px;
+    background: #5F6A73;
+    border-radius: 10px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
+
+.tries {
+    width: 30px;
+    height: 30px;
+    background: #546573;
+    border-radius: 50%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tries.good {
+    background: #5cad87;
+}
+
+.tries.wrong {
+    background: #bb5b5b;
+}
+
+.container .buttons-container {
+    height: 545px;
+    width: 545px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.buttons-container .buttons-area {
+    width: 165px;
+    height: 165px;
+    background: #5F6A73;
+    border-radius: 3px;
+}
+
+.buttons-area .buttons {
+    width: 133px;
+    height: 133px;
+    background: #3F464D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 16px;
+}
+
+.buttons.active {
+    background: #3c4465;
+}
+
+.buttons.wrong {
+    background: #937373;
+}
